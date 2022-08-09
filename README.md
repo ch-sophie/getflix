@@ -9,7 +9,7 @@
 ## The mission:
 In this exercise, we created a Streaming site in html / css, javascript and php.
 
-We were inspired by Netflix, Amazon Prime Video, Youtube...  The goal is to display a catalog of movies and TV series.
+We were inspired by Netflix, Amazon Prime Video, Youtube...  The goal is to display a catalogue of movies and TV series.
 
 #### Where: BeCode Brussels
 #### When: 5 August 2022
@@ -27,27 +27,36 @@ We were inspired by Netflix, Amazon Prime Video, Youtube...  The goal is to disp
 - Back office for user and comment management (CRUD).   
 - Create a page or section that displays the top movies with the movie db API.  
 - Integrate a newsletter with Mailchimp.   
-### The project: BesToBe
-We decided to create a platform to watch the best videos on Youtube. The name is **BesToBe**. 
-We wanted to create an easier way to find only the best of youtube with a good catalog and functionals filters.
+### The project: BesTube
+We decided to create a platform to watch the best videos on Youtube, according to us. The name is **BesTube**. 
+We wanted to create an easier way to find only the best of Youtube with a good catalogue and functional filters.
 The videos are divided in categories (as a playlist) and only registered users can comment.  
 
-To do it we used the **Youtube Data api** connect with PHP language.   
+To do it, we used the **Youtube Data API** connected with PHP language.    
 
+For non-registered users, they will have a preview of the website and can only watch one video.   
 ### Team roles*:
 - Backend: Sophie and Arianna
 - Frontend: Bhama
 - Project manager: Jilani
 
-*Note that the roles were defined to have some structure at the start of the project but each person worked on both front and back end tasks.    
+*Note that the roles were defined to have some structure at the start of the project but that each person worked on both frontend and backend tasks.
+
+
+### Preview of the project
+#### Main Page
+![Main page](/images/main.png)   
+![Main page videos](/images/main2.png)  
+
+### Sign in page
+![Sign in page](/images/sign.png)
 
 ### Pending:
-    - Deploy the site
-    - Search bar by filters
     - Optional features
-    - Connect different databases
+    - Design improvement
+    - Connect to the different databases
 
-##### Images from Unsplash
-##### Icons from Flaticons 
-
-
+#### Credit:
+Images from Unsplash   
+Images from browsecat   
+Icons from Flaticons    
