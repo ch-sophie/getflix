@@ -1,4 +1,7 @@
-# Getflix Project
+# Getflix Project  
+
+[BesTube](https://infinite-depths-37750.herokuapp.com/signin/sign.php)  
+
 
 ### Team collaborators: 
 - [Sophie Cheng](https://github.com/ch-sophie)
@@ -26,7 +29,8 @@ We were inspired by Netflix, Amazon Prime Video, Youtube...  The goal is to disp
 - Management of lost passwords.   
 - Back office for user and comment management (CRUD).   
 - Create a page or section that displays the top movies with the movie db API.  
-- Integrate a newsletter with Mailchimp.   
+- Integrate a newsletter with Mailchimp.  
+
 ### The project: BesTube
 We decided to create a platform to watch the best videos on Youtube, according to us. The name is **BesTube**. 
 We wanted to create an easier way to find only the best of Youtube with a good catalogue and functional filters.
@@ -34,7 +38,7 @@ The videos are divided in categories (as a playlist) and only registered users c
 
 To do it, we used the **Youtube Data API** connected with PHP language.    
 
-For non-registered users, they will have a preview of the website and can only watch one video.   
+For non-registered users, they will have a preview of the website and can only watch the originals videos.   
 ### Team roles*:
 - Backend: Sophie and Arianna
 - Frontend: Bhama
@@ -45,16 +49,17 @@ For non-registered users, they will have a preview of the website and can only w
 
 ### Preview of the project
 #### Main Page
-![Main page](/images/main.png)   
-![Main page videos](/images/main2.png)  
+![Main page](/assets/main.png)     
+
+![Main page videos](/assets/main2.png)  
 
 ### Sign in page
-![Sign in page](/images/sign.png)
+![Sign in page](/assets/sign.png)
 
 ### Pending:
     - Optional features
     - Design improvement
-    - Connect to the different databases
+    
 
 #### Credit:
 Images from Unsplash   

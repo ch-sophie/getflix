@@ -8,7 +8,7 @@ $category3 = "Cooking";
 $youtubePL4 = 'PLriZt3RmcI30iIudgKFINROyCK2Jmo4Z_';
 $category4 = "Movies";
 $youtubePL5 = 'PLW_c2xKfxEIoV9Udl7Q9wzikc3P28d1X7';
-$category5 = "Gaming";
+$category5 = "Videogame";
 
 $API_key = 'AIzaSyADr5BLQb1yjMtHftZIhhUEj96FvESVLMM';
 $channelID = $_GET['id'];
@@ -44,9 +44,7 @@ try{
   elseif ($channelID == $youtubePL5){
     $category = $category5;
   }
-  elseif ($channelID == $youtubePL6){
-    $category = $category6;
-  }
+
 
 ?>
 
@@ -65,6 +63,7 @@ try{
     <script src="https://kit.fontawesome.com/6c36406174.js" crossorigin="anonymous"></script>
     <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- link css -->
     <!-- <link rel="stylesheet" href="shows.css"> -->
     <link rel="stylesheet" href="shows.css?v=<?php echo time(); ?>">
@@ -81,12 +80,11 @@ try{
   <div class="dropdown">
     <button class="dropbtn">Categories</button>
     <div class="dropdown-content">
-      <a href="movies.php?id=<?php echo $youtubePL1;?>">Originals</a>
-      <a href="movies.php?id=<?php echo $youtubePL2;?>">Sport</a>
-      <a href="movies.php?id=<?php echo $youtubePL3;?>">Music</a>
-      <a href="movies.php?id=<?php echo $youtubePL4;?>">Cooking</a>
-      <a href="movies.php?id=<?php echo $youtubePL5;?>">Movies</a>
-      <a href="movies.php?id=<?php echo $youtubePL6;?>">Gaming</a>
+      <a href="movies.php?id=<?php echo $youtubePL1;?>">Sport</a>
+      <a href="movies.php?id=<?php echo $youtubePL2;?>">Music</a>
+      <a href="movies.php?id=<?php echo $youtubePL3;?>">Cooking</a>
+      <a href="movies.php?id=<?php echo $youtubePL4;?>">Movies</a>
+      <a href="movies.php?id=<?php echo $youtubePL5;?>">Gaming</a>
     </div>
   </div>
   <div class="dropdown">
@@ -97,12 +95,16 @@ try{
     </div>
   </div>
   <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search..." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
+    <form action="" method="post">
+      <input type="text" name="search" style="width: 300px;" placeholder="Search in <?php echo $category;?>..." name="search">
+      <button name="submitSearch" type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
 </div>
+
+<?php
+include_once('../searchCateg.php');
+?>
 
 <div  class="container">
 <div class='containervideo'>
@@ -152,6 +154,5 @@ try{
   </div>
 </footer>
 <!-- link script js -->
-<script src="myscript.js"></script>
 </body>
 </html>
